@@ -10,9 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
  */
+@import "bourbon";
+
 @import "materialize/components/color";
 $primary-color: color("cyan", "base") !default;
 $tabs-underline-color: color($primary-color, "accent-4");
@@ -29,7 +30,6 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-
 main {
   flex: 1 0 auto;
 }
