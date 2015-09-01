@@ -6,5 +6,6 @@ $ ->
   tabs = $('ul.tabs')
   tabs.tabs
 
-  tabs.click ->
-    $('.coldest-city, .hottest-city').toggleClass 'unrelated-city'
+  tabs.find('li').click -> 
+    if not $(this).find('a').hasClass 'active' 
+      $('.coldest-city, .hottest-city').toggleClass 'unrelated-city'
