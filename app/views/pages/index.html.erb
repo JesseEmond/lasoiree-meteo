@@ -25,34 +25,16 @@
 
     <div class="col s3 offset-s1 cities">
       <ul class="collection z-depth-1">
-        <li class="collection-item">Montréal</li>
-        <li class="collection-item">Ottawa</li>
-        <li class="collection-item">Alvin</li>
-        <li class="collection-item">Alvin</li>
-        <li class="collection-item">Montréal</li>
-        <li class="collection-item">Montréal</li>
-        <li class="collection-item">Montréal</li>
-        <li class="collection-item">Montréal</li>
-        <li class="collection-item">Montréal</li>
-        <li class="collection-item">Ottawa</li>
-        <li class="collection-item">Alvin</li>
-        <li class="collection-item">Alvin</li>
+        <% @cities[0..@cities.size/2-1].each do |city| %>
+          <%= render partial: "city", object: city %>
+        <% end %>
       </ul>
     </div>
     <div class="col s3 cities">
       <ul class="collection z-depth-1">
-        <li class="collection-item">Alvin</li>
-        <li class="collection-item">Ottawa</li>
-        <li class="collection-item">Alvin</li>
-        <li class="collection-item">Alvin</li>
-        <li class="collection-item">Ottawa</li>
-        <li class="collection-item">Alvin</li>
-        <li class="collection-item">Alvin</li>
-        <li class="collection-item">Ottawa</li>
-        <li class="collection-item">Alvin</li>
-        <li class="collection-item">Alvin</li>
-        <li class="collection-item">Ottawa</li>
-        <li class="collection-item">Alvin</li>
+        <% @cities[@cities.size/2..@cities.size-1].each do |city| %>
+          <%= render partial: "city", object: city %>
+        <% end %>
       </ul>
     </div>
 
