@@ -20,6 +20,8 @@ $tabs-underline-color: color($primary-color, "accent-4");
 $tabs-text-color: $tabs-underline-color;
 @import 'materialize';
 
+@import 'pages';
+
 footer.page-footer {
   margin-top: -20px;
 }

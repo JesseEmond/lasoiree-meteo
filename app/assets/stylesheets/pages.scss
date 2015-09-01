@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .meteo {
-  .temperature {
+  .metric {
     ul.tabs .indicator {
       height: 3px;
     }
@@ -11,5 +11,15 @@
     .menu>.row {
       margin-bottom: 0;
     }
+  }
+  
+  $city-transition-time: 0.3s;
+  .coldest-city, .hottest-city {
+    opacity: 1;
+    @include transition( opacity $city-transition-time ease-in-out );
+  }
+  .unrelated-city {
+    opacity: 0.1;
+    @include transition( opacity $city-transition-time ease-in-out );
   }
 }

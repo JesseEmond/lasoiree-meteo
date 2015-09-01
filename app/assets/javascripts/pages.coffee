@@ -3,4 +3,8 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
-  $("ul.tabs").tabs 'select_tab', 'tab_id'
+  tabs = $('ul.tabs')
+  tabs.tabs
+
+  tabs.click ->
+    $('.coldest-city, .hottest-city').toggleClass 'unrelated-city'
