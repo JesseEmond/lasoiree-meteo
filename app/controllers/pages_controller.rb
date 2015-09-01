@@ -9,5 +9,6 @@ class PagesController < ApplicationController
 
     temperatures = @cities.map {|city| city[:celcius]}
     @savard_degrees = CelciusMetricsHelper.savard_degrees temperatures
+    @weighted_degrees_indicator = CelciusMetricsHelper.weighted_degrees_indicator temperatures
   end
 end
