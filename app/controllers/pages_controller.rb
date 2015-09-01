@@ -6,5 +6,8 @@ class PagesController < ApplicationController
     # tag lowest and highest cities
     @cities[0][:lowest] = true
     @cities[-1][:highest] = true;
+
+    temperatures = @cities.map {|city| city[:celcius]}
+    @savard_degrees = CelciusMetricsHelper.savard_degrees temperatures
   end
 end
