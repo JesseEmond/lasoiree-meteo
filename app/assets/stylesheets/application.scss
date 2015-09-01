@@ -13,5 +13,8 @@
  *= require_tree .
  *= require_self
  */
-
-@import "materialize";
+@import "materialize/components/color";
+$primary-color: color("cyan", "base") !default;
+$tabs-underline-color: color($primary-color, "accent-4");
+$tabs-text-color: $tabs-underline-color;
+@import 'materialize';
