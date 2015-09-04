@@ -23,8 +23,13 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# UI
 gem 'materialize-sass'
 gem 'bourbon'
+
+# APIs
+gem 'open-weather', git: 'https://github.com/JesseEmond/ruby_open_weather_map.git'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
