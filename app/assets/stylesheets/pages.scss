@@ -11,6 +11,11 @@
     .menu>.row {
       margin-bottom: 0;
     }
+
+    #metric-explanation {
+      font-style: italic;
+      text-align: left;
+    }
   }
   
   $city-transition-time: 0.3s;
