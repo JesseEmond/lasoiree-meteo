@@ -3,12 +3,12 @@
     <div class="col s4 offset-s1 metric valign">
       <div class="card cyan z-depth-1 center-align white-text">
         <div id="savard-degrees" class="card-content">
-          <h1><%= number_with_precision(@savard_degrees, precision: 2) %></h1>
+          <h1><%= format_celcius @savard_degrees %></h1>
           <h6>°Savards</h6>
         </div>
         
         <div id="weighted-degrees-indicator" class="card-content">
-          <h1><%= @weighted_degrees_indicator %></h1>
+          <h1><%= format_celcius @weighted_degrees_indicator %></h1>
           <h6>Indice Pondéré de Température</h6>
         </div>
 
