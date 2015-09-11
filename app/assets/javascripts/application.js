@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require materialize-sprockets
 //= require turbolinks
+//= require social-share-button
 //= require_tree .

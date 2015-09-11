@@ -24,6 +24,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # UI
 gem 'materialize-sass'
 gem 'bourbon'
+gem 'social-share-button'
 
 # APIs
 gem 'open-weather', git: 'https://github.com/JesseEmond/ruby_open_weather_map.git'
