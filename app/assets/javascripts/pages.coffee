@@ -11,7 +11,7 @@ des villes importantes au Canada.
 weigthed_degrees = ->
   $('#metric-explanation').text """
 Cet indice, inventé par le Dr. Savard, donne la somme des températures au Canada
-en excluant les extremums.
+en excluant les extrema.
 """
 
 $ ->
