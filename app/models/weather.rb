@@ -6,8 +6,6 @@ class Weather
     options = options.merge({ APPID: ENV['APPID'] }) unless ENV['APPID'].nil?
 
     weather = OpenWeather::Current.cities(CANADIAN_CITY_IDS, options)
-
-    puts weather
     
     weather['list'].map do |city_weather|
       {
